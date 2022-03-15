@@ -3,7 +3,7 @@ import Axios from "axios";
 
 export const UpdateFavouriteMovies = (userID, favouriteMovies) => {
   return async (dispatch) => {
-    await Axios.patch(`https://cinemasapp.herokuapp.com/api/users/${userID}`, favouriteMovies)
+    await Axios.patch(`https://cinimasapp.herokuapp.com/api/users/${userID}`, favouriteMovies)
       .then((docs) =>
         dispatch({ type: FAVOURITE_CARD_SUCCESS, payload: docs.data })
       )
